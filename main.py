@@ -1,2 +1,6 @@
+from keboola import docker
 
-print("Hello world 15.06. v2")
+cfg = docker.Config('/data/')
+params = cfg.get_parameters()
+
+print(params['object'])
